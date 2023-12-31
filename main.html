@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Page Background Image</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('webimg.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="blur-box">
+    <div class="question-container">
+      <img src="teddy.png" alt="Teddy Bear Image" class="teddy-image">
+      <p class="question-text">will you forgive me?</p>
+    </div>
+    <div class="options-container">
+      <div class="option-box" onclick="selectOption('Yes')">Yes</div>
+      <div class="option-box" onclick="selectOption('No')">No</div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

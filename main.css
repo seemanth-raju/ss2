@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blur-box {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  
+  .option-box {
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Neon Blue */
+    background-color: #00f;
+    box-shadow: 0 0 10px #00f,
+                0 0 20px #00f,
+                0 0 40px #00f,
+                0 0 80px #00f;
+  }
+  
+  .option-box:nth-child(2) {
+    /* Neon Red */
+    background-color: #f00;
+    box-shadow: 0 0 10px #f00,
+                0 0 20px #f00,
+                0 0 40px #f00,
+                0 0 80px #f00;
+  }
+  
+  /* Additional styles for better appearance */
+  .option-box:hover {
+    /* Optional: Add hover effect */
+    filter: brightness(120%);
+  }
+  
+  /* Additional styles for the teddy bear image and question */
+  .question-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .teddy-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .question-text {
+    font-size: 18px;
+    color: #333; /* Adjust text color */
+    margin-top: 5px;
+  }
+  
